@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- header -->
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container row header-row">
       <a href="#" class="brand">
@@ -35,7 +35,7 @@
     </div>
   </header>
 
-  <!-- hero -->
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
@@ -43,7 +43,7 @@
         <p class="lead">В Telegram — без шаблонов и Excel. Бот сам собирает данные, считает сумму и присылает <b>PDF + DOCX</b>.</p>
         <div class="hero-cta">
           <a class="cta cta-xl" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">@MyDocHelperBot</a>
-          <button id="scrollHow" class="ghost">Как это работает ↓</button>
+          <a href="#how" class="ghost">Как это работает ↓</a>
         </div>
         <ul class="ticks">
           <li>5 генераций/мес — бесплатно</li>
@@ -52,19 +52,20 @@
         </ul>
       </div>
 
+      <!-- Правый мокап с неоновыми бейджами -->
       <div class="hero-art">
         <div class="mock">
           <div class="bubble">Готово ✅</div>
-          <div class="files">
-            <div class="file file-pdf">PDF</div>
-            <div class="file file-docx">DOCX</div>
+          <div class="files-neon">
+            <div class="file-neon pdf">PDF</div>
+            <div class="file-neon docx">DOCX</div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- how -->
+  <!-- HOW -->
   <section id="how" class="how">
     <div class="container">
       <h2>Как это работает</h2>
@@ -77,7 +78,7 @@
         <div class="step">
           <div class="num">2</div>
           <h3>Введи данные</h3>
-          <p>Бот ведёт по шагам. Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем нажми «Готово ✅».</p>
+          <p>Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем нажми «Готово ✅».</p>
         </div>
         <div class="step">
           <div class="num">3</div>
@@ -88,44 +89,26 @@
     </div>
   </section>
 
-  <!-- features -->
+  <!-- FEATURES (оставляем 6 карточек как просили) -->
   <section id="features" class="features">
     <div class="container">
       <h2>Почему это удобно</h2>
       <div class="grid-3">
-        <div class="card">
-          <h3>Без шаблонов</h3>
-          <p>Чистый результат без «поехавшей» вёрстки. Все расчёты и форматирование — в боте.</p>
-        </div>
-        <div class="card">
-          <h3>Сроки и расчёты</h3>
-          <p>Автоматический НДС, итоговая сумма и сроки: для счёта — дата оплаты, для КП — сколько дней действует предложение.</p>
-        </div>
-        <div class="card">
-          <h3>Гибкие позиции</h3>
-          <p>Пишите позиции по одной. Можно редактировать и дополнять перед генерацией.</p>
-        </div>
-        <div class="card">
-          <h3>PDF + DOCX</h3>
-          <p>PDF — для отправки, DOCX — для правок. Оба файла — в одном сообщении.</p>
-        </div>
-        <div class="card">
-          <h3>PRO-подписка</h3>
-          <p>Безлимитные генерации за 500 ₽/мес. Оплата по QR внутри бота.</p>
-        </div>
-        <div class="card">
-          <h3>Поддержка</h3>
-          <p>Отвечаем быстро. Подскажем по любому шагу — прямо в Telegram.</p>
-        </div>
+        <div class="card"><h3>Без шаблонов</h3><p>Чистый результат без «поехавшей» вёрстки. Все расчёты и форматирование — в боте.</p></div>
+        <div class="card"><h3>Сроки и расчёты</h3><p>Считает НДС, итоги и сроки: для счёта — дату оплаты, для КП — сколько дней действует предложение.</p></div>
+        <div class="card"><h3>Гибкие позиции</h3><p>Пишите позиции по одной. Можно редактировать и дополнять перед генерацией.</p></div>
+        <div class="card"><h3>PDF + DOCX</h3><p>PDF — для отправки, DOCX — для правок. Оба файла — в одном сообщении.</p></div>
+        <div class="card"><h3>PRO-подписка</h3><p>Безлимит за 500 ₽/мес. Оплата по QR внутри бота.</p></div>
+        <div class="card"><h3>Поддержка</h3><p>Отвечаем быстро. Подскажем по любому шагу — прямо в Telegram.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- gallery -->
+  <!-- GALLERY (ровно 2 примера, центрированные и без обрезки) -->
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Как выглядят документы</h2>
-      <div class="gallery-row">
+      <div class="gallery-row two">
         <figure>
           <img loading="lazy" src="assets/invoice.png" alt="Пример счёта" />
           <figcaption>Счёт на оплату</figcaption>
@@ -138,7 +121,7 @@
     </div>
   </section>
 
-  <!-- band -->
+  <!-- CTA -->
   <section class="cta-band">
     <div class="container row">
       <div>
@@ -149,7 +132,7 @@
     </div>
   </section>
 
-  <!-- faq -->
+  <!-- FAQ -->
   <section id="faq" class="faq">
     <div class="container">
       <h2>FAQ</h2>
@@ -168,15 +151,24 @@
     </div>
   </section>
 
-  <!-- footer -->
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container row">
-      <div class="brand-mini"><img src="assets/logo.png" alt="DocBot" /> DocBot</div>
+      <div class="brand-mini">
+        <img src="assets/logo.png" alt="DocBot" /> DocBot
+      </div>
       <div class="copy">© <span id="year"></span> DocBot. Не является публичной офертой.</div>
       <a class="cta ghost" href="https://t.me/MyDocHelperBot" target="_blank">Открыть в Telegram</a>
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    // Бургер
+    const burger = document.getElementById('burger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    burger?.addEventListener('click', () => mobileMenu.classList.toggle('open'));
+    // Год в футере
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
