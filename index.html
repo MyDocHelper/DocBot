@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DocBot — счёт и КП за 1 минуту в Telegram</title>
+  <meta name="description" content="DocBot (@MyDocHelperBot): создаёт счёт и коммерческое предложение в PDF и DOCX прямо в Telegram. Бесплатно 5 генераций/мес." />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container row header-row">
+      <a href="#" class="brand">
+        <img src="assets/logo.png" alt="DocBot" class="logo" />
+        <span>DocBot</span>
+      </a>
+      <nav class="nav hide-mobile">
+        <a href="#how">Как это работает</a>
+        <a href="#features">Функции</a>
+        <a href="#gallery">Примеры</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="cta" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">Запустить бота</a>
+      <button class="burger show-mobile" aria-label="Menu" id="burger">☰</button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#how">Как это работает</a>
+      <a href="#features">Функции</a>
+      <a href="#gallery">Примеры</a>
+      <a href="#faq">FAQ</a>
+      <a class="cta" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">Запустить бота</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <h1>Счёт и КП за 1&nbsp;минуту</h1>
+        <p class="lead">В Telegram — без шаблонов и Excel. Бот сам собирает данные, считает сумму и присылает <b>PDF + DOCX</b>.</p>
+        <div class="hero-cta">
+          <a class="cta cta-xl" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">@MyDocHelperBot</a>
+          <button id="scrollHow" class="ghost">Как это работает ↓</button>
+        </div>
+        <ul class="ticks">
+          <li>5 генераций/мес — бесплатно</li>
+          <li>PRO: 500 ₽/мес — безлимит</li>
+          <li>Работает прямо в Telegram</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <div class="mock">
+          <div class="bubble">Готово ✅</div>
+          <div class="files">
+            <div class="file">PDF</div>
+            <div class="file">DOCX</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how" class="how">
+    <div class="container">
+      <h2>Как это работает</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="num">1</div>
+          <h3>Открой бота</h3>
+          <p><a href="https://t.me/MyDocHelperBot" target="_blank">@MyDocHelperBot</a> — начни диалог в Telegram.</p>
+        </div>
+        <div class="step">
+          <div class="num">2</div>
+          <h3>Введи данные</h3>
+          <p>Бот ведёт по шагам. Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем нажми «Готово ✅».</p>
+        </div>
+        <div class="step">
+          <div class="num">3</div>
+          <h3>Получай файлы</h3>
+          <p>Готовые <b>PDF + DOCX</b> прилетят в чат. Можно сразу отправлять клиенту.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Почему это удобно</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>Без шаблонов</h3>
+          <p>Чистый результат без «поехавшей» вёрстки. Все расчёты и форматирование — в боте.</p>
+        </div>
+        <div class="card">
+          <h3>Сроки и расчёты</h3>
+          <p>Бот сам считает НДС, итоговую сумму и сроки: для счёта — дату оплаты, для КП — сколько дней действует предложение.</p>
+        </div>
+        <div class="card">
+          <h3>Гибкие позиции</h3>
+          <p>Пишите позиции по одной. Можно редактировать и дополнять перед генерацией.</p>
+        </div>
+        <div class="card">
+          <h3>PDF + DOCX</h3>
+          <p>PDF — для отправки, DOCX — для правок. Оба файла — в одном сообщении.</p>
+        </div>
+        <div class="card">
+          <h3>PRO-подписка</h3>
+          <p>Безлимитные генерации за 500 ₽/мес. Простая оплата по QR внутри бота.</p>
+        </div>
+        <div class="card">
+          <h3>Поддержка</h3>
+          <p>Отвечаем быстро. Подскажем по любому шагу — прямо в Telegram.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Как выглядят документы</h2>
+      <div class="gallery-row">
+        <figure><img loading="lazy" src="assets/invoice.png" alt="Пример счёта" /><figcaption>Счёт на оплату</figcaption></figure>
+        <figure><img loading="lazy" src="assets/kp.png" alt="Пример КП" /><figcaption>Коммерческое предложение</figcaption></figure>
+        <figure class="hide-mobile"><img loading="lazy" src="assets/invoice2.png" alt="Счёт (вариант)" /><figcaption>Счёт (вариант)</figcaption></figure>
+        <figure class="hide-mobile"><img loading="lazy" src="assets/kp2.png" alt="КП (вариант)" /><figcaption>КП (вариант)</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="container row">
+      <div>
+        <h3>Попробуй бесплатно</h3>
+        <p>5 генераций в месяц — бесплатно. Нужно больше? <b>PRO 500 ₽/мес</b>.</p>
+      </div>
+      <a class="cta" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">Запустить @MyDocHelperBot</a>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2>FAQ</h2>
+      <details open>
+        <summary>Какие форматы файлов я получу?</summary>
+        <p>Всегда два файла: PDF и DOCX.</p>
+      </details>
+      <details>
+        <summary>Как вводить позиции?</summary>
+        <p>Отдельными сообщениями: <code>Название; кол-во; цена</code>. Затем нажмите «Готово ✅».</p>
+      </details>
+      <details>
+        <summary>Что в PRO-подписке?</summary>
+        <p>Безлимит на генерации документов и приоритетная обработка заявок.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container row">
+      <div class="brand-mini"><img src="assets/logo.png" alt="DocBot" /> DocBot</div>
+      <div class="copy">© {year} DocBot. Не является публичной офертой.</div>
+      <a class="cta ghost" href="https://t.me/MyDocHelperBot" target="_blank">Открыть в Telegram</a>
+    </div>
+  </footer>
+
+  <script>
+    document.querySelector(".copy").innerHTML = "© " + new Date().getFullYear() + " DocBot. Не является публичной офертой.";
+  </script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Reset & base */
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+:root{
+  --bg:#0b0f14; --panel:#10151b; --panel2:#0e1319;
+  --text:#e9eef5; --muted:#a7b0bc; --accent:#7c3aed; --accent2:#22c55e;
+  --stroke:#1f2630;
+}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+a{color:var(--text);text-decoration:none}
+.container{width:min(1120px,92%);margin:0 auto}
+.row{display:flex;gap:16px;align-items:center;justify-content:space-between}
+.hide-mobile{display:block}.show-mobile{display:none}
+/* Header */
+.site-header{position:sticky;top:0;z-index:40;background:rgba(11,15,20,.7);backdrop-filter: blur(10px);border-bottom:1px solid var(--stroke)}
+.header-row{padding:14px 0}
+.brand{display:flex;align-items:center;font-weight:800;gap:10px}
+.logo{width:34px;height:34px;border-radius:50%;background:#60a5fa;object-fit:cover}
+.nav a{padding:8px 10px;opacity:.9}
+.cta{background:linear-gradient(135deg,var(--accent),#9a6bff);padding:10px 16px;border-radius:12px;font-weight:700;box-shadow:0 6px 16px rgba(124,58,237,.35)}
+.cta:hover{transform:translateY(-1px)}
+/* Mobile menu */
+.burger{display:none;background:transparent;border:none;font-size:22px;color:var(--text)}
+.mobile-menu{display:none;flex-direction:column;gap:8px;padding:10px;border-top:1px solid var(--stroke);background:var(--panel)}
+.mobile-menu a{padding:10px 12px;border:1px solid var(--stroke);border-radius:10px}
+/* Hero */
+.hero{padding:56px 0;background:radial-gradient(1200px 500px at 70% -10%, rgba(124,58,237,.2), transparent), radial-gradient(800px 400px at 10% 10%, rgba(34,197,94,.15), transparent)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;align-items:center}
+h1{font-size:clamp(32px,4.2vw,56px);line-height:1.1;margin:0 0 10px}
+.lead{font-size:clamp(16px,2.1vw,20px);color:var(--muted);margin:0 0 16px}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+.cta-xl{padding:14px 18px;border-radius:14px}
+.ghost{background:transparent;border:1px solid var(--stroke);padding:10px 14px;border-radius:12px;color:var(--text)}
+.ticks{margin:16px 0 0;padding:0 0 0 16px;color:var(--muted)}
+.hero-art .mock{background:var(--panel);border:1px solid var(--stroke);border-radius:20px;padding:20px;min-height:260px;display:flex;flex-direction:column;justify-content:space-between}
+.bubble{align-self:flex-start;background:#1a2330;color:#d1e7ff;border:1px solid #263548;padding:10px 14px;border-radius:16px}
+.files{display:flex;gap:12px}
+.file{padding:24px 26px;border-radius:14px;background:#0d1220;border:1px dashed #2a3350;font-weight:800;letter-spacing:.5px}
+/* Steps */
+.how{padding:40px 0;border-top:1px solid var(--stroke);background:linear-gradient(180deg,transparent,rgba(255,255,255,.02))}
+h2{font-size:clamp(24px,3vw,36px);margin:0 0 14px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.step{background:var(--panel);border:1px solid var(--stroke);border-radius:16px;padding:16px}
+.num{width:36px;height:36px;border-radius:50%;display:grid;place-content:center;background:var(--accent);font-weight:800;margin-bottom:8px}
+/* Features */
+.features{padding:30px 0}
+.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--panel2);border:1px solid var(--stroke);border-radius:16px;padding:16px}
+/* Gallery */
+.gallery{padding:30px 0}
+.gallery-row{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery figure{margin:0;background:var(--panel);border:1px solid var(--stroke);border-radius:14px;overflow:hidden}
+.gallery img{width:100%;height:100%;display:block;object-fit:cover}
+.gallery figcaption{padding:8px 10px;color:var(--muted);font-size:14px}
+/* CTA band */
+.cta-band{padding:28px 0;border-top:1px solid var(--stroke);border-bottom:1px solid var(--stroke);background:var(--panel)}
+/* FAQ */
+.faq{padding:30px 0}
+details{background:var(--panel);border:1px solid var(--stroke);padding:12px 14px;border-radius:12px;margin:10px 0}
+summary{cursor:pointer;font-weight:600}
+/* Footer */
+.site-footer{padding:22px 0;border-top:1px solid var(--stroke)}
+.brand-mini{display:flex;align-items:center;gap:8px}
+.brand-mini img{width:22px;height:22px;border-radius:50%}
+.copy{color:var(--muted);font-size:14px}
+
+/* Responsive */
+@media (max-width: 960px){
+  .hide-mobile{display:none}.show-mobile{display:block}
+  .burger{display:block}
+  .hero-grid{grid-template-columns:1fr}
+  .steps{grid-template-columns:1fr}
+  .grid-3{grid-template-columns:1fr}
+  .gallery-row{grid-template-columns:1fr 1fr}
+}
