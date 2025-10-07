@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- HEADER -->
   <header class="site-header">
     <div class="container row header-row">
       <a href="#" class="brand">
@@ -23,7 +24,7 @@
         <a href="#faq">FAQ</a>
       </nav>
       <a class="cta" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">Запустить бота</a>
-      <button class="burger show-mobile" aria-label="Меню" id="burger">☰</button>
+      <button class="burger show-mobile" aria-label="Menu" id="burger">☰</button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#how">Как это работает</a>
@@ -34,6 +35,7 @@
     </div>
   </header>
 
+  <!-- HERO -->
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-text">
@@ -49,18 +51,21 @@
           <li>Работает прямо в Telegram</li>
         </ul>
       </div>
-      <div class="hero-art" aria-hidden="true">
+
+      <!-- обновлённый визуал с неоновыми значками -->
+      <div class="hero-art">
         <div class="mock">
           <div class="bubble">Готово ✅</div>
-          <div class="files">
-            <div class="file">PDF</div>
-            <div class="file">DOCX</div>
+          <div class="chips">
+            <span class="chip pdf">PDF</span>
+            <span class="chip docx">DOCX</span>
           </div>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- HOW -->
   <section id="how" class="how">
     <div class="container">
       <h2>Как это работает</h2>
@@ -73,17 +78,18 @@
         <div class="step">
           <div class="num">2</div>
           <h3>Введи данные</h3>
-          <p>Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем «Готово ✅».</p>
+          <p>Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем нажми «Готово ✅».</p>
         </div>
         <div class="step">
           <div class="num">3</div>
           <h3>Получай файлы</h3>
-          <p>Готовые <b>PDF + DOCX</b> прилетят в чат. Можно отправлять клиенту.</p>
+          <p>Готовые <b>PDF + DOCX</b> прилетят в чат. Можно сразу отправлять клиенту.</p>
         </div>
       </div>
     </div>
   </section>
 
+  <!-- FEATURES -->
   <section id="features" class="features">
     <div class="container">
       <h2>Почему это удобно</h2>
@@ -94,33 +100,46 @@
         </div>
         <div class="card">
           <h3>Сроки и расчёты</h3>
-          <p>Бот сам считает НДС, итоговую сумму и сроки оплаты/действия предложения.</p>
+          <p>Бот считает НДС, итоги и сроки: для счёта — дату оплаты, для КП — срок действия предложения.</p>
+        </div>
+        <div class="card">
+          <h3>Гибкие позиции</h3>
+          <p>Пишите позиции по одной. Можно редактировать и дополнять перед генерацией.</p>
         </div>
         <div class="card">
           <h3>PDF + DOCX</h3>
           <p>PDF — для отправки, DOCX — для правок. Оба файла — в одном сообщении.</p>
         </div>
+        <div class="card">
+          <h3>PRO-подписка</h3>
+          <p>Безлимитные генерации за 500 ₽/мес. Оплата по QR внутри бота.</p>
+        </div>
+        <div class="card">
+          <h3>Поддержка</h3>
+          <p>Отвечаем быстро. Подскажем по любому шагу — прямо в Telegram.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ГАЛЕРЕЯ: ровно 2 карточки, без обрезания -->
+  <!-- GALLERY (теперь только 2 карточки, центр, без обрезания) -->
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Как выглядят документы</h2>
-      <div class="gallery-row two-cols">
-        <figure>
+      <div class="gallery-row two">
+        <figure class="doc-card">
           <img loading="lazy" src="assets/invoice.png" alt="Пример счёта" />
           <figcaption>Счёт на оплату</figcaption>
         </figure>
-        <figure>
-          <img loading="lazy" src="assets/kp.png" alt="Пример коммерческого предложения" />
+        <figure class="doc-card">
+          <img loading="lazy" src="assets/kp.png" alt="Пример КП" />
           <figcaption>Коммерческое предложение</figcaption>
         </figure>
       </div>
     </div>
   </section>
 
+  <!-- CTA -->
   <section class="cta-band">
     <div class="container row">
       <div>
@@ -131,6 +150,7 @@
     </div>
   </section>
 
+  <!-- FAQ -->
   <section id="faq" class="faq">
     <div class="container">
       <h2>FAQ</h2>
@@ -140,15 +160,16 @@
       </details>
       <details>
         <summary>Как вводить позиции?</summary>
-        <p><code>Название; кол-во; цена</code> — отдельными сообщениями. Затем «Готово ✅».</p>
+        <p>Отдельными сообщениями: <code>Название; кол-во; цена</code>. Затем нажмите «Готово ✅».</p>
       </details>
       <details>
         <summary>Что в PRO-подписке?</summary>
-        <p>Безлимит на генерации документов и приоритетная обработка.</p>
+        <p>Безлимит на генерации документов и приоритетная обработка заявок.</p>
       </details>
     </div>
   </section>
 
+  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="container row">
       <div class="brand-mini"><img src="assets/logo.png" alt="DocBot" /> DocBot</div>
@@ -157,6 +178,17 @@
     </div>
   </footer>
 
-  <script src="script.js"></script>
+  <script>
+    document.querySelector(".copy").innerHTML =
+      "© " + new Date().getFullYear() + " DocBot. Не является публичной офертой.";
+    // плавный скролл к "Как это работает"
+    document.getElementById('scrollHow')?.addEventListener('click', () => {
+      document.getElementById('how')?.scrollIntoView({behavior:'smooth'});
+    });
+    // мобильное меню
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('mobileMenu');
+    burger?.addEventListener('click', () => menu.classList.toggle('open'));
+  </script>
 </body>
 </html>
