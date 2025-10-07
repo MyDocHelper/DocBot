@@ -23,7 +23,7 @@
         <a href="#faq">FAQ</a>
       </nav>
       <a class="cta" href="https://t.me/MyDocHelperBot" target="_blank" rel="noopener">Запустить бота</a>
-      <button class="burger show-mobile" aria-label="Menu" id="burger">☰</button>
+      <button class="burger show-mobile" aria-label="Меню" id="burger">☰</button>
     </div>
     <div class="mobile-menu" id="mobileMenu">
       <a href="#how">Как это работает</a>
@@ -49,7 +49,7 @@
           <li>Работает прямо в Telegram</li>
         </ul>
       </div>
-      <div class="hero-art">
+      <div class="hero-art" aria-hidden="true">
         <div class="mock">
           <div class="bubble">Готово ✅</div>
           <div class="files">
@@ -73,12 +73,12 @@
         <div class="step">
           <div class="num">2</div>
           <h3>Введи данные</h3>
-          <p>Бот ведёт по шагам. Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем нажми «Готово ✅».</p>
+          <p>Позиции пиши <b>отдельными сообщениями</b> в формате <code>Название; кол-во; цена</code>, затем «Готово ✅».</p>
         </div>
         <div class="step">
           <div class="num">3</div>
           <h3>Получай файлы</h3>
-          <p>Готовые <b>PDF + DOCX</b> прилетят в чат. Можно сразу отправлять клиенту.</p>
+          <p>Готовые <b>PDF + DOCX</b> прилетят в чат. Можно отправлять клиенту.</p>
         </div>
       </div>
     </div>
@@ -94,36 +94,29 @@
         </div>
         <div class="card">
           <h3>Сроки и расчёты</h3>
-          <p>Бот сам считает НДС, итоговую сумму и сроки: для счёта — дату оплаты, для КП — сколько дней действует предложение.</p>
-        </div>
-        <div class="card">
-          <h3>Гибкие позиции</h3>
-          <p>Пишите позиции по одной. Можно редактировать и дополнять перед генерацией.</p>
+          <p>Бот сам считает НДС, итоговую сумму и сроки оплаты/действия предложения.</p>
         </div>
         <div class="card">
           <h3>PDF + DOCX</h3>
           <p>PDF — для отправки, DOCX — для правок. Оба файла — в одном сообщении.</p>
         </div>
-        <div class="card">
-          <h3>PRO-подписка</h3>
-          <p>Безлимитные генерации за 500 ₽/мес. Простая оплата по QR внутри бота.</p>
-        </div>
-        <div class="card">
-          <h3>Поддержка</h3>
-          <p>Отвечаем быстро. Подскажем по любому шагу — прямо в Telegram.</p>
-        </div>
       </div>
     </div>
   </section>
 
+  <!-- ГАЛЕРЕЯ: ровно 2 карточки, без обрезания -->
   <section id="gallery" class="gallery">
     <div class="container">
       <h2>Как выглядят документы</h2>
-      <div class="gallery-row">
-        <figure><img loading="lazy" src="assets/invoice.png" alt="Пример счёта" /><figcaption>Счёт на оплату</figcaption></figure>
-        <figure><img loading="lazy" src="assets/kp.png" alt="Пример КП" /><figcaption>Коммерческое предложение</figcaption></figure>
-        <figure class="hide-mobile"><img loading="lazy" src="assets/invoice2.png" alt="Счёт (вариант)" /><figcaption>Счёт (вариант)</figcaption></figure>
-        <figure class="hide-mobile"><img loading="lazy" src="assets/kp2.png" alt="КП (вариант)" /><figcaption>КП (вариант)</figcaption></figure>
+      <div class="gallery-row two-cols">
+        <figure>
+          <img loading="lazy" src="assets/invoice.png" alt="Пример счёта" />
+          <figcaption>Счёт на оплату</figcaption>
+        </figure>
+        <figure>
+          <img loading="lazy" src="assets/kp.png" alt="Пример коммерческого предложения" />
+          <figcaption>Коммерческое предложение</figcaption>
+        </figure>
       </div>
     </div>
   </section>
@@ -147,11 +140,11 @@
       </details>
       <details>
         <summary>Как вводить позиции?</summary>
-        <p>Отдельными сообщениями: <code>Название; кол-во; цена</code>. Затем нажмите «Готово ✅».</p>
+        <p><code>Название; кол-во; цена</code> — отдельными сообщениями. Затем «Готово ✅».</p>
       </details>
       <details>
         <summary>Что в PRO-подписке?</summary>
-        <p>Безлимит на генерации документов и приоритетная обработка заявок.</p>
+        <p>Безлимит на генерации документов и приоритетная обработка.</p>
       </details>
     </div>
   </section>
@@ -164,9 +157,6 @@
     </div>
   </footer>
 
-  <script>
-    document.querySelector(".copy").innerHTML = "© " + new Date().getFullYear() + " DocBot. Не является публичной офертой.";
-  </script>
   <script src="script.js"></script>
 </body>
 </html>
