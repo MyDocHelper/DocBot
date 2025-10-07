@@ -122,6 +122,24 @@ figcaption{color:var(--muted);font-size:14px;margin-top:8px}
 .brand-mini{display:flex;align-items:center;gap:10px}
 .brand-mini img{width:26px;height:26px;border-radius:6px;object-fit:contain}
 
+/* === Footer layout fix: добавить этот блок ниже === */
+.site-footer .row{
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.site-footer .brand-mini{
+  min-width:160px;           /* слева логотип */
+}
+.site-footer .copy{
+  flex:1;                    /* центр растягивается */
+  text-align:center;         /* текст по центру */
+}
+.site-footer .cta.ghost{
+  margin-left:auto;          /* кнопка вправо */
+}
+/* === /Footer layout fix === */
+
 /* Responsive */
 @media (max-width:980px){
   .hero-grid{grid-template-columns:1fr}
@@ -129,9 +147,15 @@ figcaption{color:var(--muted);font-size:14px;margin-top:8px}
   .show-mobile{display:block}
   .hero h1{font-size:40px}
 }
+
 @media (max-width:720px){
   .steps{grid-template-columns:1fr}
   .grid-3{grid-template-columns:1fr}
   figure{width:100%}
   .file-neon{min-width:96px;padding:16px 18px}
+
+  /* футер на мобилке — в колонку и по центру */
+  .site-footer .row{flex-direction:column;gap:10px}
+  .site-footer .copy{text-align:center;flex:initial}
+  .site-footer .cta.ghost{margin-left:0}
 }
